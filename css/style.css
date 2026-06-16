@@ -573,3 +573,37 @@ button, input, select, textarea {
         font-size: 26px;
     }
 }
+
+
+/* ===================================================
+   Scroll Reveal Animation Styles
+   =================================================== */
+/* 애니메이션 기본 대기 상태 */
+.reveal_element_ptf {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform, opacity;
+}
+
+/* 왼쪽에서 오른쪽으로 등장하는 효과 (옵션용) */
+.reveal_left_ptf {
+    transform: translateX(-40px);
+}
+
+/* 오른쪽에서 왼쪽으로 등장하는 효과 (옵션용) */
+.reveal_right_ptf {
+    transform: translateX(40px);
+}
+
+/* 스크롤 감지되어 활성화된 상태 */
+.reveal_element_ptf.active_reveal_ptf {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+}
+
+/* 순차적 스르륵 등장을 위한 시간차(Delay) 클래스 */
+.delay_200_ptf { transition-delay: 0.2s; }
+.delay_400_ptf { transition-delay: 0.4s; }
+.delay_600_ptf { transition-delay: 0.6s; }
