@@ -578,12 +578,13 @@ button, input, select, textarea {
 /* ===================================================
    Scroll Reveal Animation Styles
    =================================================== */
-/* 애니메이션 기본 대기 상태 */
+
 .reveal_element_ptf {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    /* 원래 0.8s로 되어 있던 부분을 1.2s 또는 1.5s로 늘려줍니다 */
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform, opacity;
 }
 
