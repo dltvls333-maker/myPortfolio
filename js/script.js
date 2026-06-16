@@ -54,6 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(element);
     });
 
-    alert(1)
 });
 
