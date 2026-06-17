@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* ===================================================
-   Reset & Base Styles
-   =================================================== */
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -29,16 +27,14 @@ button, input, select, textarea {
     color: inherit;
 }
 
-/* Layout Container */
+
 .container_ptf {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* ===================================================
-   Header Navigation
-   =================================================== */
+
 .header_ptf {
     position: fixed;
     top: 0;
@@ -93,9 +89,6 @@ button, input, select, textarea {
     color: #ff6b35;
 }
 
-/* ===================================================
-   Hero Section
-   =================================================== */
 .hero_ptf {
     height: 100vh;
     display: flex;
@@ -203,6 +196,10 @@ button, input, select, textarea {
     animation: morphing_ptf 7s infinite linear alternate-reverse;
     opacity: 0.5;
     filter: blur(30px);
+}
+.logo_Img {
+    width:200px;
+    height:90px;
 }
 .graphic_card_ptf {
     position: absolute;
@@ -583,8 +580,8 @@ button, input, select, textarea {
     opacity: 0;
     transform: translateY(40px);
     /* 원래 0.8s로 되어 있던 부분을 1.2s 또는 1.5s로 늘려줍니다 */
-    transition: opacity 2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-                transform 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     will-change: transform, opacity;
 }
 
